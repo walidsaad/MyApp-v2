@@ -1,7 +1,7 @@
 <?php
-define('DB_HOST', getenv('OPENSHIFT_MYSQL_DB_HOST'));
-define('DB_USER',getenv('OPENSHIFT_MYSQL_DB_USERNAME'));
-define('DB_PASS', getenv('OPENSHIFT_MYSQL_DB_PASSWORD'));
+define('DB_HOST', '172.17.0.2');
+define('DB_USER','root');
+define('DB_PASS', 'root');
 try
 {
 $bdd = new PDO('mysql:host='.DB_HOST.';dbname=gestionetudiants',DB_USER,DB_PASS);
